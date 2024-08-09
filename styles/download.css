@@ -1,0 +1,111 @@
+#download{
+  & .container{
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 1.5rem;
+    height: 41.375rem;
+    position: relative;
+    padding: 3rem 1.5rem;
+      & img{
+        position:absolute;
+        height: 20rem;
+        right: -3rem;
+        bottom:  0;
+      }
+      #stores{
+        margin-top: 2rem;
+      }
+    
+      & .btn-down{
+        display: flex;
+        width: fit-content;
+          background-color: var(--bg-color);
+          border: 1px solid var(--text-color-sec);
+          border-radius: .5rem;
+          padding: .5rem .75rem;
+          align-items: center;
+          gap: .5rem;
+          height: 3.5rem;
+        & img{
+          position: relative;
+          right: 0;
+          height: 2rem;
+          width: 2rem;
+        }
+        & div{
+          width: fit-content;
+          & strong{
+            margin: 0;
+            font-size: 1.25rem;
+          }
+          & p{
+            margin: 0;
+            font-size: .75rem;
+          }
+        }
+      }
+    }
+  & i{
+    font-style: none;
+    text-transform: uppercase;
+    color: var(--brand-color-prim);
+    font: var(--fw-md) var(--fs-sm)/1.0 var(--fonte);
+    letter-spacing: 0.08em;
+  }
+
+}
+
+@media (width >= 80em){
+  #download{
+    & .container{
+      height: 33.875rem;
+      padding: 8.75rem 5rem;
+      & img{
+        height: auto;
+        width: 29.125rem;
+      }
+      & div{
+        width: 40rem;
+      }
+      & .btn-down{
+        display: flex;
+        width: fit-content;
+          background-color: var(--bg-color);
+          border: 1px solid var(--text-color-sec);
+          border-radius: .5rem;
+          padding: .5rem .75rem;
+          align-items: center;
+          gap: .5rem;
+        & img{
+          position: relative;
+          top: 0;
+          right: 0;
+          height: 2rem;
+          width: 2rem;
+        }
+        & div{
+          width: fit-content;
+          & strong{
+            margin: 0;
+            font-size: 1.25rem;
+          }
+          & p{
+            margin: 0;
+            font-size: .75rem;
+          }
+        }
+      }
+    }
+    #stores{
+      display: flex;
+      margin-top: 2.5rem;
+    }
+    & i{
+      font-style: none;
+      text-transform: uppercase;
+      color: var(--brand-color-prim);
+      font: var(--fw-md) var(--fs-sm)/1.0 var(--fonte);
+      letter-spacing: 0.08em;
+    }
+  }
+}

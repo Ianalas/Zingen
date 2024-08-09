@@ -1,0 +1,48 @@
+footer{
+  padding-inline: var(--px-lg);
+  gap: var(--py-xl);
+  & #soPC{
+    display: grid;
+    gap: 3rem;
+  }
+  & div{
+    gap: 1.25rem;
+    & i{
+      font: var(--fw-md) .75rem/1.0 var(--fonte);
+      color: var(--brand-color-prim);
+      text-transform: uppercase;
+    }
+    & p{
+      color: var(--text-color-sec);
+    }
+    & a p:hover{
+      color: transparent;
+    }
+  }
+  & #redeSocial{
+    & p{
+      font-size: var(--fs-sm);
+    }
+  }
+}
+
+@media( width >= 80em ){
+  footer{
+    & #soPC{
+      display: flex;
+      justify-content: space-between;
+      & >  div{
+        display: flex;
+        justify-content: space-evenly;
+        & div:nth-child(3){
+          margin-right: 3.125rem;
+        }
+      }
+    }
+
+    & #redeSocial{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
